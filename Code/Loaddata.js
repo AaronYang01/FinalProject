@@ -59,6 +59,7 @@ function changeData(){
   textAlign(CENTER);
   fill (255,0,0)
   stroke(10);
+  strokeWeight(5);
   imageMode(CENTER);
   for (let i = 0; i < table.getRowCount(); i++){
     if(companyMenu.value() == table.getString(i, 'Date')){
