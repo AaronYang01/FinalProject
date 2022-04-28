@@ -9,7 +9,7 @@ let videoArray = [];
 function preload() {
   //my table is comma separated value "csv"
   //and has a header specifying the columns labels
-  bg = loadImage('Code/youtube.jpg')
+  bg = loadImage('Code/you.jpg')
   table = loadTable('Code/DataFF.csv', 'csv', 'header');
 
 }
@@ -19,7 +19,7 @@ function setup() {
   canvas = createCanvas(windowWidth, windowHeight);
   canvas.position(0,0)
   canvas.style("z-index", "-1")
-  background(0);
+  background(bg);
   fill(255)
   youtubeVideo  = select('#youtubeVideo');
 
