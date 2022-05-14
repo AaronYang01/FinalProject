@@ -38,6 +38,7 @@ function setup() {
     let adAppear = table.getString(i, 'Ad Appear');
     let platform= table.getString(i, 'Platform');
     let images= table.getString(i, 'Images');
+    let mood = table.getString(i,'Mood');
     videoArray[i] = table.getString(i, 'videoID');
 
 
@@ -67,6 +68,7 @@ function changeData(){
       text(table.getString(i, 'Time Play'), 1100, 50);
        text(table.getString(i, 'Ad Appear'), 1100, 90);
        text(table.getString(i, 'Platform'), 1100,130);
+       text(table.getString(i,'Mood'),1100,170);
 
 
         youtubeVideo.attribute('src', 'https://www.youtube.com/embed/' + videoArray[i]);
